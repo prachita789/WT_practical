@@ -1,0 +1,65 @@
+<!-- Develop and demonstrate JavaScript with POP-UP boxes 
+and functions for the following problems: 
+a) Input: Click on Display Date button using onclick( ) function 
+Output: Display date in the textbox 
+b) Input: A number n obtained using prompt 
+Output: Factorial of n number using alert  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-Up Boxes</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="flex-row">
+        <div class="container">
+            <h3>Display Date</h3>
+            <input type="text" id="dateBox" placeholder="Date will appear here">
+            <button onclick="displayDate()">Display date</button>
+        </div>
+        <div class="container">
+            <h3>Factorial Calculation</h3>
+            <button onclick="calculateFactorial()">Find Factorial</button>
+        </div>
+    </div>
+
+    <script>
+        function displayDate() {
+            document.getElementById("dateBox").value = new Date().toLocaleString();
+        }
+
+
+        function factorial(n) {
+
+            let result = 1;
+            for (let i = 1; i <= n; i++) {
+                result *= i;
+            }
+            return result;
+
+        }
+
+        function calculateFactorial() {
+            let num = prompt("Enter a Number to find its Factorial:");
+
+            num = parseInt(num);
+
+            if (!isNaN(num) && num >= 0) {
+                let fact = factorial(num);
+                alert("The factorial of " + num + " is : " + factorial(num));
+            }
+            else {
+                alert("Please enter a valid non-negative number: ");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

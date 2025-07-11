@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🏏 Cricket Live Score</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h2 id="teams">🏏 Cricket Live Score</h2>
+    <p style="text-align:center; color:#666; font-size:14px;">Powered by XML & JSON</p>
+    <p id="venue"></p>
+    <p id="dateTime"></p>
+
+    <div class="score" id="scoreDisplay">
+      <div class="spinner"></div>
+      <p class="loading-text">Fetching live score...</p>
+    </div>
+
+    <p id="currentInning"></p>
+
+    <div id="playersSection" class="players" style="display: none;">
+      <h3>Players</h3>
+      <div id="indiaPlayers">
+        <strong>India:</strong>
+        <ul></ul>
+      </div>
+      <div id="nzPlayers">
+        <strong>New Zealand:</strong>
+        <ul></ul>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button onclick="loadXML()">Show Match Info (XML)</button>
+      <button onclick="loadJSON()">Show Live Score (JSON)</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+body{
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+    
+}
+
+
+
+.cv-container{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 40px;
+    background: white;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+
+}
+
+header{
+    text-align: center;
+    margin-bottom: 30px;
+    /* border-bottom: 2px solid #3498db; */
+     border-bottom: 3px solid #3498db;
+    padding-bottom: 20px;
+}
+
+h1{
+    color: #2c3e50;
+    margin: 0 0 12px 0;
+    font-weight: 600;
+   letter-spacing: -0.5px;
+}
+.title{
+    color: #3498db;
+    font-size: 1.4em;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.contact-list{
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.contact-list li{
+    display: flex;
+    width: 100%;
+    color: #555;
+    align-items: center;
+    gap: 10px;
+    font-size: 1em;
+}
+
+.contact-list i{
+    width: 22px;
+    text-align: center;
+    color: #3498db;
+    font-size: 1.1em;
+}
+
+section{
+    margin: 35px 0;
+    padding: 25px 0;
+    border-bottom: 1px solid #eee;
+}
+
+h2{
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #3498db;
+}
+
+.education-item, .experience-item{
+    margin-bottom: 35px;
+}
+
+h3 {
+    color: #2c3e50;
+    margin: 0 0 8px 0;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.institution, .company{
+    color: #666;
+    font-style: normal;
+    margin: 0 0 5px 0;
+    font-size:0.95em ;
+}
+
+.duration{
+    color: #3498db;
+    font-style:0.9em;
+    margin: 0 0 12px 0;
+    font-weight: 500;
+}
+
+.skill-list{
+    display: grid;
+    grid-template-columns: none;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.skill-list li{
+    padding: 8px 15px;
+    color: #2c3e50;
+    background: #f4f4f9;
+    border-radius: 5px;
+    font-size: 0.95em;
+    font-weight: 500;
+    align-items: center;
+    
+}
+
+.experience-item{
+    margin-left: 15px;
+}
+.responsibilities{
+    padding-left: 25px;
+    margin: 20px 0;
+}
+
+.responsibilities li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    font-size: 0.95em;
+    color: #444;
+    position: relative;
+}
+
+ .responsibilities li::before {
+    content: "▹";
+    color: #3498db;
+    position: absolute;
+    left: -20px;
+}
+a{
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #2c3e50;
+} 
+
+
+ 
+
+

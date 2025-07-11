@@ -1,0 +1,111 @@
+<!-- Write JavaScript to validate the following fields of the Registration page. 
+1. First Name (Name should contains alphabets and the length should not be less 
+than 6 characters). 
+2. Password (Password should not be less than 6 characters length). 
+3. E-mail id (should not contain any invalid and must 
+follow the standard pattern name@domain.com) 
+4. Mobile Number (Phone number should contain 10 digits only). 
+5. Last Name and Address (should not be Empty) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Registration Form</h2>
+    <form id="registrationForm">
+      <label>First Name:</label>
+      <input type="text" placeholder="First Name" id="firstName" required>
+
+      <label>Last Name:</label>
+      <input type="text" placeholder="Last Name" id="lastName" required>
+
+      <label>Password:</label>
+      <input type="password" placeholder="Enter Password" id="password" required>
+
+      <label>Email:</label>
+      <input type="email" placeholder="Enter your Email" id="email" required>
+
+      <label>Mobile Number:</label>
+      <input type="Number" placeholder="Enter Your Numbere" id="mobile_num" required>
+
+      <label>Address:</label>
+      <input type="text" placeholder="Enter Your Address" id="address" required>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+
+  <script>
+
+    document.getElementById("registrationForm").addEventListener("submit", function (event) {
+      if (!validationForm()) {
+        event.preventDefault();
+      }
+    });
+
+    function validationForm() {
+      let firstName = document.getElementById("firstName").value.trim();
+      let lastName = document.getElementById("lastName").value.trim();
+      let pass = document.getElementById("password").value.trim();
+      let email = document.getElementById("email").value.trim();
+      let mobile = document.getElementById("mobile_num").value.trim();
+      let address = document.getElementById("address").value.trim();
+
+      // First Name validation
+      if (firstName.length < 6 || !isAlphabetic(firstName)) {
+        alert("First Name must be at least 6 characters and contain only alphabets.");
+        return false;
+      }
+
+      // Last Name validation
+      if (lastName === "") {
+        alert("Last Name is required.");
+        return false;
+      }
+
+      // Password validation
+      if (pass.length < 6) {
+        alert("Password must be at least 6 characters.");
+        return false;
+      }
+
+      // Email validation
+      const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+      if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address (e.g., name@domain.com)");
+        return false;
+      }
+
+      // Mobile number validation
+      const mobileRegex = /^\d{10}$/;
+      if (!mobileRegex.test(mobile)) {
+        alert("Mobile number must be exactly 10 digits.");
+        return false;
+      }
+
+      // Address validation
+      if (address === "") {
+        alert("Address is required.");
+        return false;
+      }
+
+      alert("Registration Successful!");
+      return true;
+    }
+
+    function isAlphabetic(str) {
+      return /^[a-zA-Z]+$/.test(str);
+    }
+  </script>
+</body>
+
+</html>

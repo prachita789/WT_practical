@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Bean - Coffee Shop</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+         .welcome-message {
+            font-size: 1.5rem;
+            color: #4a2c2a; 
+            text-align: center;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header style="background-color: #4a2c2a; padding: 1rem; text-align: center;">
+        <h1 style="color: white; margin: 0;">Brew & Bean</h1>
+        <p style="color: #d4a56a; margin: 0.5rem 0;">Serving the finest coffee in town!</p>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <div class="welcome-message">
+                <p>Welcome to Brew & Bean! Enjoy our handcrafted coffee and cozy ambiance.</p>
+            </div>
+            <img src="./coffee_shop.jpg" alt="Coffee Shop Image" style="width: 100%; height: auto; border-radius: 8px;">
+        </section>
+
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <table class="menu-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Image</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Espresso</td>
+                        <td>
+                            <img src="./espresso.jpg" alt="Espresso" class="coffee-image">
+                        </td>
+                        <td>Strong and bold</td>
+                        <td>$3.50</td>
+                    </tr>
+                    <tr>
+                        <td>Cappuccino</td>
+                        <td>
+                            <img src="./cappuccino.jpg" alt="Cappuccino" class="coffee-image">
+                        </td>
+                        <td>Rich and creamy</td>
+                        <td>$4.50</td>
+                    </tr>
+                    <tr>
+                        <td>Latte</td>
+                        <td>
+                            <img src="./latte.jpg" alt="Latte" class="coffee-image">
+                        </td>
+                        <td>Smooth and milky</td>
+                        <td>$5.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cold Brew</td>
+                        <td>
+                            <img src="./cold_brew.jpg" alt="Cold Brew" class="coffee-image">
+                        </td>
+                        <td>Refreshing and smooth</td>
+                        <td>$4.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Brew & Bean is a cozy coffee shop dedicated to serving the finest coffee made from ethically sourced
+                beans. We believe in creating a warm and welcoming environment for our customers.</p>
+            <ul>
+                <li>Ethically Sourced Beans</li>
+                <li>Handcrafted Coffee</li>
+                <li>Cozy Ambiance</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 Brew & Bean. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+ <book>
+  <title>Wings of Fire</title>
+  <author>A.P.J. Abdul Kalam</author>
+  <isbn>978-8173711466</isbn>
+  <publisher>Universities Press</publisher>
+  <edition>1st</edition>
+  <price>299</price>
+ </book>
+ <book>
+ <title>Train to Pakistan</title>
+ <author>Khushwant Singh</author>
+ <isbn>978-0143065883</isbn>
+ <publisher>Penguin India</publisher>
+ <edition>1st</edition>
+ <price>259</price>
+ </book>
+ <book>
+ <title>Ikigai: The Japanese Secret to a Long and Happy Life</title>
+ <author>Héctor García,  Francesc Miralles</author>
+ <isbn>978-014130727</isbn>
+ <publisher>Penguin Random House</publisher>
+ <edition>1st</edition>
+ <price>499</price>
+ </book>
+</books>

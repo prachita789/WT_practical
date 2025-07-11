@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<match>
+  <team1>India</team1>
+  <team2>New Zealand</team2>
+  <venue>Jamtha Stadium, Nagpur</venue>
+  <players>
+    <team name="India">
+      <player>Rohit Sharma</player>
+      <player>Virat Kohli</player>
+      <player>Hardik Pandya</player>
+      <player>Jasprit Bumrah</player>
+    </team>
+    <team name="New Zealand">
+      <player>Kane Williamson</player>
+      <player>Devon Conway</player>
+      <player>Trent Boult</player>
+      <player>Mitchell Santner</player>
+    </team>
+  </players>
+</match>
